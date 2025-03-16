@@ -153,11 +153,8 @@ function handleEmailInput() {
 function handleCommentInput() {
   fullCommentText = refs.commentInput.value.trim();
 
-  if (refs.commentInput.scrollWidth > refs.commentInput.offsetWidth) {
-    refs.commentInput.style.overflowX = 'auto';
-  } else {
-    refs.commentInput.style.overflowX = 'hidden';
-  }
+  refs.commentInput.style.overflowX = 'scroll';
+  refs.commentInput.style.webkitOverflowScrolling = 'touch';
 
   if (fullCommentText.length === 0) {
     hideCommentSuccessBorder();
