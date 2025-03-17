@@ -153,9 +153,6 @@ function handleEmailInput() {
 function handleCommentInput() {
   fullCommentText = refs.commentInput.value.trim();
 
-  refs.commentInput.style.overflowX = 'scroll';
-  refs.commentInput.style.webkitOverflowScrolling = 'touch';
-
   if (fullCommentText.length === 0) {
     hideCommentSuccessBorder();
     hideCommentErrorBorder();

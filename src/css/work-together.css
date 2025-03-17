@@ -48,9 +48,6 @@
 }
 
 .form-input.comment {
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    overflow-x: scroll;
     margin-bottom: 32px;
 }
 
